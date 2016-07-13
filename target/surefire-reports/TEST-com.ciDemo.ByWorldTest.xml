@@ -59,8 +59,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.ciDemo.ByWorldTest" name="testGetByeWorld" time="0.001">
-    <failure message="expected:&lt;[Good Bye World]&gt; but was:&lt;[bye]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Good Bye World]&gt; but was:&lt;[bye]&gt;
+  <testcase classname="com.ciDemo.ByWorldTest" name="testGetByeWorld" time="0.002">
+    <failure message="expected:&lt;Good Bye W[o]rld&gt; but was:&lt;Good Bye W[]rld&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;Good Bye W[o]rld&gt; but was:&lt;Good Bye W[]rld&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at com.ciDemo.ByWorldTest.testGetByeWorld(ByWorldTest.java:10)

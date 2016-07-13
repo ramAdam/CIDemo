@@ -1,3 +1,12 @@
 language: java
 script: mvn -Dtest=JunitTestSuite test
 
+#after_script:
+   #- |
+    #    if [ "$TRAVIS_TEST_RESULT" = "0" ]; then
+     #       -git reset --hard HEAD~1  # revert to the last commit
+      #  fi
+
+#after_failure:
+# -git reset --hard HEAD~1
+

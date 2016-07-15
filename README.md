@@ -6,6 +6,6 @@ Basic maven commands for this project are :
 
 ```
 mvn clean test
-mvn -Dtest=JunitTestSuite
-mvn -Dtest=HelloWorldTest
+mvn -Dtest=JunitTestSuite test
+mvn -Dtest=HelloWorldTest test
 ```

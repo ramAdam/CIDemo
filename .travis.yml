@@ -2,12 +2,14 @@ language: java
 script: mvn -Dtest=JunitTestSuite test
 
 after_script:
-   rc=$? #last run command status
-   if [[$rc -ne 0]]; then
-       -git rever HEAD # revert to the last commit
-       echo '[*] Build Tests failed, reverting to the last commit'
-       exit $rc
-   fi
+   - |
+        $rc = $?
+        if [[$rc -ne 0]]; then
+            git revert HEAD
+            echo '[*] Build Tests failed, reverting to the last commit'
+            exit $rc
+        fi
+   
 
 #after_failure:
 # -git reset --hard HEAD~1

@@ -2,14 +2,10 @@
 [![Build Status](https://travis-ci.org/ramAdam/CIDemo.svg?branch=master)](https://travis-ci.org/ramAdam/CIDemo)
 The project is a Travis CI demo with maven
 
-From terminal run 
-  mvn clean -Dtest=JunitTestSuite test
+Basic maven commands for this project are :
 
-The command above runs the test suite. To run all junit tests
-  mvn clean test
-
-
-To run individual tests
-  mvn -Dtest=HelloWorldTest test
-  mvn -Dtest=ByWorldTest test
-  
+```
+mvn clean test
+mvn -Dtest=JunitTestSuite
+mvn -Dtest=HelloWorldTest
+```

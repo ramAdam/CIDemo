@@ -5,4 +5,4 @@ rc=$?
           echo 'could not perform tests'; exit $rc
         fi
 
-        echo 'testing hell script' 
+        echo $TRAVIS_TEST_RESULT 

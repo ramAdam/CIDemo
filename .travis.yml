@@ -5,9 +5,9 @@ after_script:
    - |
         rc=$?
         if [[$rc -ne 0]]; then
-            git revert HEAD
-            echo '[*] Build Tests failed, reverting to the last commit'
-            exit $rc
+            - git revert HEAD
+            - echo '[*] Build Tests failed, reverting to the last commit'
+            - exit $rc
         fi
    
 

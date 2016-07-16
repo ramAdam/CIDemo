@@ -1,7 +1,7 @@
 language: java
 script: mvn -Dtest=JunitTestSuite test
 
-after_script:./undoScript.sh
+after_script: ./undoScript.sh
 
 #after_failure:
 # -git reset --hard HEAD~1

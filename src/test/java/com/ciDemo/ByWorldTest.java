@@ -7,7 +7,7 @@ public class ByWorldTest {
 
 	@Test
 	public void testGetByeWorld() {
-		Assert.assertEquals(App.getByeWorld(), "Good Bye World");
+		Assert.assertEquals(App.getByeWorld(), "Good Bye Wrld");
 	}
 
 }

@@ -5,4 +5,4 @@ Feature: Greeter
 
   Scenario: Greet Hello World
     Given I have a greeter
-    Then i should see Hello World
+    Then i should see "Hello World"

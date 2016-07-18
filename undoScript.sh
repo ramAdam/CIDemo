@@ -2,7 +2,8 @@
 
 
         if [[ $TRAVIS_TEST_RESULT -ne 0 ]] ; then
-          echo 'could not perform tests'; exit $rc
+		echo '[x] Reseting the branch to last commit'
+		git reset HEAD~1
         fi
 
         echo $TRAVIS_TEST_RESULT
